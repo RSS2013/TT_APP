@@ -1,0 +1,155 @@
+/* A quick, extra large button */
+.btn-xlarge {
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-size: 16px;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+}
+
+.btn-signup {
+    padding: 40px 70px;
+    margin: 10px 0px;
+    font-size: 30px;
+}
+
+.btn-xlarge [class^="icon-"],
+.btn-xlarge [class*=" icon-"] {
+    margin-top: 4px;
+}
+
+/* gimme some space! */
+.btn {
+    margin-bottom: 5px;
+}
+
+/* downloadable */
+.btn-download .specs {
+    font-size: 0.6em;
+}
+
+/* in the middle */
+.pull-center {
+    text-align: center;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* From: http://twitter.github.io/bootstrap/examples/justified-nav.html */
+/* Main marketing message and sign up button */
+.jumbotron {
+    margin: 80px 0 60px;
+    text-align: center;
+}
+.jumbotron h2 {
+    font-size: 50px;
+    line-height: 1;
+}
+.jumbotron .lead {
+    font-size: 24px;
+    line-height: 1.25;
+}
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.sharing {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Icon theme for the header of global layout */
+.icon-theme {
+    font-size: 3em;
+    color: #FFFFFF;
+}
+
+/* The login page css for customizing bootstrap */
+.my-background {
+    background-color: #cdd4db;
+}
+
+.navbar .my-brand {
+    color: #FFF2F2;
+}
+
+.navbar-fixed-top .my-navbar-inner {
+    background-color: #3B3C4B; 
+    background-image: none;
+}
+
+.navbar .nav>li>a {
+    color: #cdbfe3;
+}
+
+.navbar .nav>li>a:hover {
+    color: #FFFFFF;
+}
+
+.my-navbar-text {
+    color: #ABC345;
+}
+
+.my-unit {
+    background-color: #eeeeee;
+}
+
+.hero-unit .my-h1 {
+    font-family: "Helvetica Neue"; 
+    font-size: 50px;
+}
+
+.hero-unit .my-p {
+    font-size: 20px;
+    font-family: "Helvetica Neue" 
+    line-height: 22px;
+}
+
+.my-legend {
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+legend + .my-control-group {
+    margin-top: 0px;
+}
+
+.form-horizontal .my-control-group {
+    margin-bottom: 6px;
+}
+
+.form-horizontal .my-controls {
+    margin-left: 0px;
+}
+
+input[type="my-text"], input[type="my-password"]{
+    height: 30px;
+    padding: 4px 6px;
+    line-height: 20px;
+}
+
+input[type="my-password"]{
+    -webkit-text-security: disc;
+}
+
+input[type="my-text-top"], input[type="my-password-top"]{
+    height: 25px;
+    padding: 4px 6px;
+    line-height: 20px;
+}
+
+.my-btn-success {
+    margin-left: 100px;
+    margin-top: 6px;
+} 
+
+.my-avatar {
+    height: 280px;
+    width: 280px;
+}

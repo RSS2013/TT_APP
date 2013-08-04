@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>TawkTalk</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="/assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/assets/css/social-buttons.css" rel="stylesheet">
+    <link href="/assets/css/stylesheet.css" rel="stylesheet">
+    
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <script src="/assets/js/html5shiv.js"></script>
+    <!--[endif]-->
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/jquery.validate.js"></script>
+    <script src="../assets/js/signup.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/ico/favicon.png">
+
   </head>
-  <body>
+
+  <body class="my-background">
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner my-navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand my-brand" href="#">TawkTalk</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="text-theme"><i class="icon-home icon-theme"></i> Home </li>
+              <li><i class="icon-info-sign icon-theme"></i> About </li>
+              <li class="dropdown">
+		        <a class="dropdown-toggle icon-thumbs-up icon-theme" href="#" data-toggle="dropdown"></a>
+		        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+			    <p style="text-align:center"> Thanks for sharing TawkTalk. </p>
+		        <button class="btn-xlarge btn-facebook"id="sign-in-facebook"><i class="icon-facebook"></i></button>
+		        <button class="btn-xlarge btn-google-plus"><i class="icon-google-plus"></i></button>
+		        <button class="btn-xlarge btn-twitter"><i class="icon-twitter"></i></button>
+            		<button class="btn-xlarge btn-linkedin"><i class="icon-linkedin"></i></button>
+		        </div>
+
+              <li><i class="icon-cog icon-theme"></i> Settings </li> 
+            </ul>
+  
+ <ul class="nav pull-right">
+	<li class="dropdown">
+		<a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+		<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+		<form method="post" action="login" accept-charset="UTF-8">
+	
+      			<input style="margin-bottom: 15px;" type="text" placeholder="Email" id="email" name="Email">
+			<input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="Password">
+			<input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+			<label class="string optional" for="user_remember_me"> Remember me</label>
+			<input class="btn btn-success btn-block" type="submit" id="sign-in" value="Sign In">
+			<label style="text-align:center;margin-top:30px">Or use social sign in!</label>
+
+			<label style="text-align:center">
+		        <button class="btn-xlarge btn-facebook"id="sign-in-facebook"><i class="icon-facebook"></i></button>
+		        <button class="btn-xlarge btn-google-plus"><i class="icon-google-plus"></i></button>
+		        <button class="btn-xlarge btn-twitter"><i class="icon-twitter"></i></button>
+			</label>
+
+		</form>
+		</div>
+	</li>
+	<li class="divider-vertical"></li>
+	<li class="dropdown">
+		<a class="dropdown-toggle icon-thumbs-up icon-theme" href="#" data-toggle="dropdown"></a>
+		<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+			<p style="text-align:center"> Thanks for sharing TawkTalk. </p>
+		        <button class="btn-xlarge btn-facebook"id="sign-in-facebook"><i class="icon-facebook"></i></button>
+		        <button class="btn-xlarge btn-google-plus"><i class="icon-google-plus"></i></button>
+		        <button class="btn-xlarge btn-twitter"><i class="icon-twitter"></i></button>
+            		<button class="btn-xlarge btn-linkedin"><i class="icon-linkedin"></i></button>
+		</div>
+  </ul>
+	  </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+      <footer>
+        <div class="row">
+          <div class="span2">
+            <p>&copy; TawkTalk 2013</p>
+          </div>
+          <div class="span7">
+          </div>
+        </div>
+      </footer>
+
   </body>
 </html>
