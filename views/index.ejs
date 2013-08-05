@@ -62,64 +62,40 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand my-brand" href="#">TawkTalk</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="#"><i class="icon-home icon-theme"></i> Home </a></li>
-              <li><a href="#"><i class="icon-info-sign icon-theme"></i> About </a></li>
+              <li>
+                <a href="#"><i class="icon-home icon-theme"></i>
+                  <span class="text-theme">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-info-sign icon-theme"></i>
+                  <span class="text-theme">About</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="#"><i class="icon-cog icon-theme"></i></a></li>
               <li class="dropdown">
                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">
                   <i class="icon-thumbs-up icon-theme" href="#"></i>
                   Share
                 </a>
-              <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-                <p style="text-align:center"> Thanks for sharing TawkTalk. </p>
-                <button class="btn-xlarge btn-facebook"id="sign-in-facebook"><i class="icon-facebook"></i></button>
-                <button class="btn-xlarge btn-google-plus"><i class="icon-google-plus"></i></button>
-                <button class="btn-xlarge btn-twitter"><i class="icon-twitter"></i></button>
-                <button class="btn-xlarge btn-linkedin"><i class="icon-linkedin"></i></button>
-              </div>
+                <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                  <p style="text-align:center"> Thanks for sharing TawkTalk. </p>
+                  <button class="btn-xlarge btn-facebook"id="sign-in-facebook"><i class="icon-facebook"></i></button>
+                  <button class="btn-xlarge btn-google-plus"><i class="icon-google-plus"></i></button>
+                  <button class="btn-xlarge btn-twitter"><i class="icon-twitter"></i></button>
+                  <button class="btn-xlarge btn-linkedin"><i class="icon-linkedin"></i></button>
+                </div>
               </li>
-              <li><a href="#"><i class="icon-cog icon-theme"></i> Settings </a></li> 
             </ul>
-        </div>
- <ul class="nav pull-right">
-	<li class="dropdown">
-		<a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
-		<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-		<form method="post" action="login" accept-charset="UTF-8">
-	
-      			<input style="margin-bottom: 15px;" type="text" placeholder="Email" id="email" name="Email">
-			<input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="Password">
-			<input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
-			<label class="string optional" for="user_remember_me"> Remember me</label>
-			<input class="btn btn-success btn-block" type="submit" id="sign-in" value="Sign In">
-			<label style="text-align:center;margin-top:30px">Or use social sign in!</label>
-
-			<label style="text-align:center">
-		        <button class="btn-xlarge btn-facebook"id="sign-in-facebook"><i class="icon-facebook"></i></button>
-		        <button class="btn-xlarge btn-google-plus"><i class="icon-google-plus"></i></button>
-		        <button class="btn-xlarge btn-twitter"><i class="icon-twitter"></i></button>
-			</label>
-
-		</form>
-		</div>
-	</li>
-	<li class="divider-vertical"></li>
-	<li class="dropdown">
-		<a class="dropdown-toggle icon-thumbs-up icon-theme" href="#" data-toggle="dropdown"></a>
-		<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-			<p style="text-align:center"> Thanks for sharing TawkTalk. </p>
-		        <button class="btn-xlarge btn-facebook"id="sign-in-facebook"><i class="icon-facebook"></i></button>
-		        <button class="btn-xlarge btn-google-plus"><i class="icon-google-plus"></i></button>
-		        <button class="btn-xlarge btn-twitter"><i class="icon-twitter"></i></button>
-            		<button class="btn-xlarge btn-linkedin"><i class="icon-linkedin"></i></button>
-		</div>
-  </ul>
-	  </div><!--/.nav-collapse -->
+	      </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
+
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
 

@@ -65,9 +65,18 @@ section {
 }
 
 /* Icon theme for the header of global layout */
+.logo-theme {
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
 .icon-theme {
-    font-size: 3em;
-    color: #FFFFFF;
+    font-size: 2em;
+    color: #bbb;
 }
 
 /* The login page css for customizing bootstrap */
@@ -76,7 +85,7 @@ section {
 }
 
 .navbar .my-brand {
-    color: #FFF2F2;
+    color: #bbb;
 }
 
 .navbar-fixed-top .my-navbar-inner {
@@ -85,7 +94,11 @@ section {
 }
 
 .navbar .nav>li>a {
-    color: #cdbfe3;
+    color: #bbb;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 0 -1px 1px rgba(0,0,0,.75);
 }
 
 .navbar .nav>li>a:hover {
