@@ -1,113 +1,101 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>TawkTalk</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<% include theme-header.ejs %>
 
-    <link href="/assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
-    <link href="/assets/css/social-buttons.css" rel="stylesheet">
-    <link href="/assets/css/stylesheet.css" rel="stylesheet">
-    
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <script src="/assets/js/html5shiv.js"></script>
-    <!--[endif]-->
-    
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/jquery.validate.js"></script>
-    <script src="../assets/js/signup.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
-
-
-
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="/assets/ico/favicon.png">
-
-  </head>
-
-  <body class="my-background">
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner my-navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li>
-                <a href="#"><i class="icon-home icon-theme"></i>
-                  <span class="text-theme">Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="#"><i class="icon-info-sign icon-theme"></i>
-                  <span class="text-theme">About</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav pull-right">
-              <li><a href="#"><i class="icon-cog icon-theme"></i></a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                  <i class="icon-thumbs-up icon-theme" href="#"></i>
-                  Share
-                </a>
-                <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-                  <p style="text-align:center"> Thanks for sharing TawkTalk. </p>
-                  <button class="btn-xlarge btn-facebook"id="sign-in-facebook"><i class="icon-facebook"></i></button>
-                  <button class="btn-xlarge btn-google-plus"><i class="icon-google-plus"></i></button>
-                  <button class="btn-xlarge btn-twitter"><i class="icon-twitter"></i></button>
-                  <button class="btn-xlarge btn-linkedin"><i class="icon-linkedin"></i></button>
-                </div>
-              </li>
-            </ul>
-	      </div><!--/.nav-collapse -->
+<div id="wrap">
+<div class="container" id="my-container">
+  <!-- Main hero unit for a primary marketing message or call to action -->
+  <div class="my-unit hero-unit">
+  <div class="row-fluid">
+    <div class="span8">
+      <h1 class="h1">Welcome to TawkTalk.</h1>
+      <p class="p">TawkTalk instantly connects you to native speakers in any language and on any device.</p>
+    </div>
+    <div class="row-fluid">
+    <div class="span4">
+      <form id="signup" class="form-horizontal" method="post" action="success">
+        <legend class="my-legend">New to TawkTalk? Sign up!</legend>
+        <div class="my-control-group control-group">
+          <div class="my-controls controls">
+            <div class="input-prepend">
+              <input type="my-text" class="input-xlarge" id="email" name="email" placeholder="Email" content-type="email">
+            </div>
+         </div>
         </div>
+        <div class="my-control-group control-group">
+          <div class="my-controls controls">
+            <div class="input-prepend">
+              <input type="my-password" id="passwd" class="my-input input-xlarge" name="passwd" placeholder="Password" content-type="passwd">
+            </div>
+          </div>
+        </div>
+        <div class="my-control-group control-group">
+          <div class="my-controls controls">
+            <div class="input-prepend">
+              <input type="my-password" id="conpasswd" class="my-input input-xlarge" name="conpasswd" placeholder="Re-enter Password" content-type="conpasswd">
+            </div>
+          </div>
+        </div>
+ 
+        <div class="my-control-group control-group">
+          <div class="my-controls controls">
+            <button type="submit" class="btn btn-success my-btn-success" >Sign up for TawkTalk</button>
+          </div>
+        </div>
+      </form>
       </div>
     </div>
+  </div>
+  </div>
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <!-- Example row of columns -->
+  <div class="avatar-title">
+    <p>Speakers online now:
+      <span class="avatar-number">536,000</span> speakers from <span class="avatar-number">144</span> countries are online this minutes. </span>
+    </p>
+  </div>
+  <div class="row">
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar1.jpg" alt>
+    </div>
+    <div class="span2">
+      <img class="my-avatar" src="/assets/img/avatar2.jpg" alt>
+   </div>
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar3.jpg" alt>
+    </div>
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar4.jpg" alt>
+    </div>
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar5.jpg" alt>
+    </div>
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar6.jpg" alt>
+    </div>
+  </div>
 
-      <footer>
-        <div class="row">
-          <div class="span2">
-            <p>&copy; TawkTalk 2013</p>
-          </div>
-          <div class="span7">
-          </div>
-        </div>
-      </footer>
+  <div class="row">
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar7.jpg" alt>
+    </div>
+    <div class="span2">
+      <img class="my-avatar" src="/assets/img/avatar8.jpg" alt>
+   </div>
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar9.jpg" alt>
+    </div>
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar10.jpg" alt>
+    </div>
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar11.jpg" alt>
+    </div>
+    <div class="span2">
+        <img class="my-avatar" src="/assets/img/avatar12.jpg" alt>
+    </div>
+  </div>
 
-  </body>
-</html>
+
+</div>
+</div>
+
+<% include theme-footer.ejs %>

@@ -65,18 +65,20 @@ section {
 }
 
 /* Icon theme for the header of global layout */
-.logo-theme {
-    width: 35px;
-    height: 35px;
-    background-image: url(../img/logo.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    vertical-align: text-top;
+.logo-theme{
+    width: 100px;
+    height: 39px;
+    padding-right: 20px;
 }
 
 .icon-theme {
     font-size: 2em;
     color: #bbb;
+}
+
+.my-dropdown-menu {
+    margin: 3px 0px;
+    padding: 0px 6px 6px 6px; 
 }
 
 /* The login page css for customizing bootstrap */
@@ -111,17 +113,7 @@ section {
 
 .my-unit {
     background-color: #eeeeee;
-}
-
-.hero-unit .my-h1 {
-    font-family: "Helvetica Neue"; 
-    font-size: 50px;
-}
-
-.hero-unit .my-p {
-    font-size: 20px;
-    font-family: "Helvetica Neue" 
-    line-height: 22px;
+    padding: 36px 60px;
 }
 
 .my-legend {
@@ -142,9 +134,10 @@ legend + .my-control-group {
 }
 
 input[type="my-text"], input[type="my-password"]{
-    height: 30px;
+    width: 320px;
+    height: 24px;
     padding: 4px 6px;
-    line-height: 20px;
+    line-height: 24px;
 }
 
 input[type="my-password"]{
@@ -158,11 +151,52 @@ input[type="my-text-top"], input[type="my-password-top"]{
 }
 
 .my-btn-success {
-    margin-left: 100px;
+    margin-left: 160px;
     margin-top: 6px;
+    font-weight: bold;
 } 
 
+.avatar-title {
+    text-align: left;
+    font-size: 16px;
+    color: #000000;
+}
+
+.avatar-number {
+    font-weight: bold;
+}
+
 .my-avatar {
-    height: 280px;
-    width: 280px;
+    height: 200px;
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#my-container {
+    overflow: auto;
+    padding-bottom: 80px;
+}
+
+.footer {
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 0px;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+    background-color: #3B3C4B;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    padding-top: 10px;
+}
+
+html, body {
+    height: 100%;
 }
